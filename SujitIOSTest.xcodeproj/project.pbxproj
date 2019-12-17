@@ -14,6 +14,7 @@
 		8435E02623A86F08006A5D9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8435E02423A86F08006A5D9F /* LaunchScreen.storyboard */; };
 		8435E03323A87348006A5D9F /* CountryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8435E03223A87348006A5D9F /* CountryModel.swift */; };
 		8435E03523A87384006A5D9F /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8435E03423A87384006A5D9F /* ApiManager.swift */; };
+		8435E03923A875F6006A5D9F /* CountryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8435E03823A875F6006A5D9F /* CountryCell.swift */; };
 		89771BB4BF251F8C4B4C5256 /* Pods_SujitIOSTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 167BEA16BDB34441A373795B /* Pods_SujitIOSTest.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,7 @@
 		8435E02723A86F08006A5D9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8435E03223A87348006A5D9F /* CountryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryModel.swift; sourceTree = "<group>"; };
 		8435E03423A87384006A5D9F /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		8435E03823A875F6006A5D9F /* CountryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryCell.swift; sourceTree = "<group>"; };
 		E8D00A53A6C615B7C99005FB /* Pods-SujitIOSTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SujitIOSTest.release.xcconfig"; path = "Target Support Files/Pods-SujitIOSTest/Pods-SujitIOSTest.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -105,6 +107,7 @@
 			children = (
 				8435E02423A86F08006A5D9F /* LaunchScreen.storyboard */,
 				8435E01F23A86F08006A5D9F /* Main.storyboard */,
+				8435E03823A875F6006A5D9F /* CountryCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -251,6 +254,7 @@
 			files = (
 				8435E03523A87384006A5D9F /* ApiManager.swift in Sources */,
 				8435E01E23A86F08006A5D9F /* ViewController.swift in Sources */,
+				8435E03923A875F6006A5D9F /* CountryCell.swift in Sources */,
 				8435E01C23A86F08006A5D9F /* AppDelegate.swift in Sources */,
 				8435E03323A87348006A5D9F /* CountryModel.swift in Sources */,
 			);
