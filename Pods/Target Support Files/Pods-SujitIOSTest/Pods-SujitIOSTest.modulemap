@@ -1,0 +1,6 @@
+framework module Pods_SujitIOSTest {
+  umbrella header "Pods-SujitIOSTest-umbrella.h"
+
+  export *
+  module * { export * }
+}

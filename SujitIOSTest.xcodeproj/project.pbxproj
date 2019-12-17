@@ -12,9 +12,12 @@
 		8435E02123A86F08006A5D9F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8435E01F23A86F08006A5D9F /* Main.storyboard */; };
 		8435E02323A86F08006A5D9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8435E02223A86F08006A5D9F /* Assets.xcassets */; };
 		8435E02623A86F08006A5D9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8435E02423A86F08006A5D9F /* LaunchScreen.storyboard */; };
+		89771BB4BF251F8C4B4C5256 /* Pods_SujitIOSTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 167BEA16BDB34441A373795B /* Pods_SujitIOSTest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		167BEA16BDB34441A373795B /* Pods_SujitIOSTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SujitIOSTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E8434ACBCDB6912275CD4B2 /* Pods-SujitIOSTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SujitIOSTest.debug.xcconfig"; path = "Target Support Files/Pods-SujitIOSTest/Pods-SujitIOSTest.debug.xcconfig"; sourceTree = "<group>"; };
 		8435E01823A86F08006A5D9F /* SujitIOSTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SujitIOSTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8435E01B23A86F08006A5D9F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8435E01D23A86F08006A5D9F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		8435E02223A86F08006A5D9F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8435E02523A86F08006A5D9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8435E02723A86F08006A5D9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8D00A53A6C615B7C99005FB /* Pods-SujitIOSTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SujitIOSTest.release.xcconfig"; path = "Target Support Files/Pods-SujitIOSTest/Pods-SujitIOSTest.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89771BB4BF251F8C4B4C5256 /* Pods_SujitIOSTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4747DEC5342821ED6CFA3254 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4E8434ACBCDB6912275CD4B2 /* Pods-SujitIOSTest.debug.xcconfig */,
+				E8D00A53A6C615B7C99005FB /* Pods-SujitIOSTest.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		8435E00F23A86F08006A5D9F = {
 			isa = PBXGroup;
 			children = (
 				8435E01A23A86F08006A5D9F /* SujitIOSTest */,
 				8435E01923A86F08006A5D9F /* Products */,
+				4747DEC5342821ED6CFA3254 /* Pods */,
+				9A042782EEEB1E48CAEB6931 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +81,14 @@
 			path = SujitIOSTest;
 			sourceTree = "<group>";
 		};
+		9A042782EEEB1E48CAEB6931 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				167BEA16BDB34441A373795B /* Pods_SujitIOSTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +96,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8435E02A23A86F08006A5D9F /* Build configuration list for PBXNativeTarget "SujitIOSTest" */;
 			buildPhases = (
+				206079C1863D2D69ABDEB82C /* [CP] Check Pods Manifest.lock */,
 				8435E01423A86F08006A5D9F /* Sources */,
 				8435E01523A86F08006A5D9F /* Frameworks */,
 				8435E01623A86F08006A5D9F /* Resources */,
+				62061A160A94E67B829B1C1B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,51 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		206079C1863D2D69ABDEB82C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SujitIOSTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		62061A160A94E67B829B1C1B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SujitIOSTest/Pods-SujitIOSTest-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SujitIOSTest/Pods-SujitIOSTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8435E01423A86F08006A5D9F /* Sources */ = {
@@ -272,6 +344,7 @@
 		};
 		8435E02B23A86F08006A5D9F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E8434ACBCDB6912275CD4B2 /* Pods-SujitIOSTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -286,6 +359,7 @@
 		};
 		8435E02C23A86F08006A5D9F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8D00A53A6C615B7C99005FB /* Pods-SujitIOSTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
