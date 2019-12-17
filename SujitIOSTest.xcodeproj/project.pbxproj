@@ -12,6 +12,8 @@
 		8435E02123A86F08006A5D9F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8435E01F23A86F08006A5D9F /* Main.storyboard */; };
 		8435E02323A86F08006A5D9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8435E02223A86F08006A5D9F /* Assets.xcassets */; };
 		8435E02623A86F08006A5D9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8435E02423A86F08006A5D9F /* LaunchScreen.storyboard */; };
+		8435E03323A87348006A5D9F /* CountryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8435E03223A87348006A5D9F /* CountryModel.swift */; };
+		8435E03523A87384006A5D9F /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8435E03423A87384006A5D9F /* ApiManager.swift */; };
 		89771BB4BF251F8C4B4C5256 /* Pods_SujitIOSTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 167BEA16BDB34441A373795B /* Pods_SujitIOSTest.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +27,8 @@
 		8435E02223A86F08006A5D9F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8435E02523A86F08006A5D9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8435E02723A86F08006A5D9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8435E03223A87348006A5D9F /* CountryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryModel.swift; sourceTree = "<group>"; };
+		8435E03423A87384006A5D9F /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
 		E8D00A53A6C615B7C99005FB /* Pods-SujitIOSTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SujitIOSTest.release.xcconfig"; path = "Target Support Files/Pods-SujitIOSTest/Pods-SujitIOSTest.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -46,7 +50,6 @@
 				4E8434ACBCDB6912275CD4B2 /* Pods-SujitIOSTest.debug.xcconfig */,
 				E8D00A53A6C615B7C99005FB /* Pods-SujitIOSTest.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -71,14 +74,56 @@
 		8435E01A23A86F08006A5D9F /* SujitIOSTest */ = {
 			isa = PBXGroup;
 			children = (
-				8435E01B23A86F08006A5D9F /* AppDelegate.swift */,
-				8435E01D23A86F08006A5D9F /* ViewController.swift */,
-				8435E01F23A86F08006A5D9F /* Main.storyboard */,
-				8435E02223A86F08006A5D9F /* Assets.xcassets */,
-				8435E02423A86F08006A5D9F /* LaunchScreen.storyboard */,
+				8435E02E23A8728B006A5D9F /* Model */,
+				8435E02F23A87299006A5D9F /* View */,
+				8435E02D23A8724D006A5D9F /* Controller */,
+				8435E03023A872AA006A5D9F /* Manager */,
 				8435E02723A86F08006A5D9F /* Info.plist */,
+				8435E03123A872D9006A5D9F /* Helper */,
 			);
 			path = SujitIOSTest;
+			sourceTree = "<group>";
+		};
+		8435E02D23A8724D006A5D9F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8435E01D23A86F08006A5D9F /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8435E02E23A8728B006A5D9F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8435E03223A87348006A5D9F /* CountryModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8435E02F23A87299006A5D9F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8435E02423A86F08006A5D9F /* LaunchScreen.storyboard */,
+				8435E01F23A86F08006A5D9F /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8435E03023A872AA006A5D9F /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				8435E03423A87384006A5D9F /* ApiManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		8435E03123A872D9006A5D9F /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				8435E01B23A86F08006A5D9F /* AppDelegate.swift */,
+				8435E02223A86F08006A5D9F /* Assets.xcassets */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 		9A042782EEEB1E48CAEB6931 /* Frameworks */ = {
@@ -164,15 +209,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-SujitIOSTest-checkManifestLockResult.txt",
 			);
@@ -208,8 +249,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8435E03523A87384006A5D9F /* ApiManager.swift in Sources */,
 				8435E01E23A86F08006A5D9F /* ViewController.swift in Sources */,
 				8435E01C23A86F08006A5D9F /* AppDelegate.swift in Sources */,
+				8435E03323A87348006A5D9F /* CountryModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
